@@ -18,13 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
       {/* Step 5 - Display the Data */}
-      {/* <img src={nasaImage} alt="Nasa Image of the Day" /> */}
-
       <NasaImage />
     </div>
   );
