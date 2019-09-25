@@ -38,16 +38,16 @@ export default function NasaImage() {
     <div>
       <Dropdown />
       <div className="image-container">
-        <PhotoOfTheDay src={nasaImage} alt="Nasa Image of the Day" />
+        <PhotoOfTheDay id="photo-of-the-day" />
       </div>
       <div className="image-container">
-        <MyBirthday />
+        <DougieBirthday id="dougie-birthday" />
       </div>
       <div className="image-container">
-        <DougieBirthday />
+        <SophieBirthday id="sophie-birthday" />
       </div>
       <div className="image-container">
-        <SophieBirthday />
+        <MyBirthday id="my-birthday" />
       </div>
     </div>
   );
