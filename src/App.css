@@ -57,23 +57,18 @@ body {
 .dropdown {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* align-content: center; */
   color: white;
   margin-top: 20px;
 }
 
 ul {
   list-style-type: none;
-  /* justify-content: center; */
-  /* text-align: center; */
-  /* align-content: center; */
-  /* align-items: center; */
 }
 
 li {
   margin: 15px 45px 0 5px;
+  padding: 10px;
+  border-radius: 20px;
 
 }
 
@@ -84,4 +79,9 @@ li:hover {
 a {
   text-decoration: none;
   color: white;
+}
+
+.button {
+  font-size: 24px;
+  font-weight: bold;
 }
