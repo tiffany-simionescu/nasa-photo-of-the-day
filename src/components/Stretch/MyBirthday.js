@@ -18,7 +18,7 @@ export default function MyBirthday() {
   }, [])
 
   return (
-    <div className="image">
+    <div>
       <img className="image" src={image} alt="My Birthday" />
       <h2>{title}</h2>
       {/* Couldn't go back any further */}

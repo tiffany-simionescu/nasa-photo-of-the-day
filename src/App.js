@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import NasaImage from '../src/components/NasaImage.js';
+import NasaImages from '../src/components/NasaImages.js';
 
 function App() {
 //   // Step 3 - Fetching the Data 
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       {/* Step 5 - Display the Data */}
-      <NasaImage />
+      <NasaImages />
     </div>
   );
 }

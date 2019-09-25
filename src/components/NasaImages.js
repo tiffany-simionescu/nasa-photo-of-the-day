@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import NasaImageContainer from "./NasaImageContainer.js";
-import AboutImage from './AboutImage.js';
+import PhotoOfTheDay from "./PhotoOfTheDay.js";
 import MyBirthday from './Stretch/MyBirthday.js';
 import DougieBirthday from './Stretch/DougieBirthday.js';
 import SophieBirthday from './Stretch/SophieBirthday.js';
+import Dropdown from './Stretch/Dropdown.js';
 import axios from 'axios';
 
 export default function NasaImage() {
@@ -36,13 +36,17 @@ export default function NasaImage() {
 
   return (
     <div>
-      <div className="image">
-        <NasaImageContainer src={nasaImage} alt="Nasa Image of the Day" />
-        <AboutImage />
+      <Dropdown />
+      <div className="image-container">
+        <PhotoOfTheDay src={nasaImage} alt="Nasa Image of the Day" />
       </div>
-      <div className="my-birthday">
+      <div className="image-container">
         <MyBirthday />
+      </div>
+      <div className="image-container">
         <DougieBirthday />
+      </div>
+      <div className="image-container">
         <SophieBirthday />
       </div>
     </div>

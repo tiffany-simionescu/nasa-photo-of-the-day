@@ -18,7 +18,7 @@ export default function DougieBirthday() {
   }, [])
 
   return (
-    <div className="image">
+    <div>
       <img className="image" src={image} alt="Dougie's Birthday" />
       <h2>{title}</h2>
       <p>Photo Taken on 2013-05-31</p>
