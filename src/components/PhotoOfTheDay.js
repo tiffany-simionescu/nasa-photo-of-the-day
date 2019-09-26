@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+// Second Day Design using Reactstrap
+import {Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText} from 'reactstrap';
 
 export default function PhotoOfTheDay() {
   const [title, setTitle] = useState("");
@@ -20,11 +22,23 @@ export default function PhotoOfTheDay() {
   }, [])
 
   return (
-    <div>
-      <img className="image" src={image} alt="Photo of the Day" />
-      <h2>{title}</h2>
-      <h4>Photo Taken on {date}</h4>
-      <p>{explanation}</p>
-    </div>
+    // First Day Design
+
+    // <div>
+    //   <img className="image" src={image} alt="Photo of the Day" />
+    //   <h2>{title}</h2>
+    //   <h4>Photo Taken on {date}</h4>
+    //   <p>{explanation}</p>
+    // </div>
+
+    // Second Day Design using Reactstrap
+    <Card>
+      <CardImg className="image" src={image} alt="Photo of the Day" />
+        <CardBody>
+          <CardTitle tag="h2">{title}</CardTitle>
+          <CardSubtitle tag="h4">Photo Taken on {date}</CardSubtitle>
+          <CardText>{explanation}</CardText>
+        </CardBody>
+    </Card>
   )
 }
