@@ -23,7 +23,7 @@ export default function PhotoOfTheDay() {
     <div>
       <img className="image" src={image} alt="Photo of the Day" />
       <h2>{title}</h2>
-      <p>Photo Taken on {date}</p>
+      <h4>Photo Taken on {date}</h4>
       <p>{explanation}</p>
     </div>
   )

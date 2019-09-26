@@ -35,7 +35,7 @@ export default function ImageContainer(props) {
       <CardImg className="image" src={image} alt={props.alt} />
       <CardBody>
         <CardTitle tag="h2">{title}</CardTitle>
-        <CardSubtitle>Photo Taken on {props.date}</CardSubtitle>
+        <CardSubtitle tag="h4">Photo Taken on {props.date}</CardSubtitle>
         <CardText>{explanation}</CardText>
       </CardBody>
     </Card>
