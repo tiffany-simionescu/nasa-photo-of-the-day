@@ -32,7 +32,7 @@ export default function PhotoOfTheDay() {
     // </div>
 
     // Second Day Design using Reactstrap
-    <Card>
+    <Card className="image-container">
       <CardImg className="image" src={image} alt="Photo of the Day" />
         <CardBody>
           <CardTitle tag="h2">{title}</CardTitle>
