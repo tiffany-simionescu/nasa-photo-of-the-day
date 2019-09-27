@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import {Link} from 'react-router-dom';
 
 class Dropdown extends React.Component {
 constructor(){
@@ -35,10 +36,10 @@ showDropdownMenu(event) {
 
           { this.state.displayMenu ? (
           <ul>
-         <li><a href="#photo-of-the-day">Photo of the Day</a></li>
-         <li><a href="#dougie-birthday">Dougie's Birthday</a></li>
-         <li><a href="#sophie-birthday">Sophie's Birthday</a></li>
-         <li><a href="#my-birthday">My Birthday</a></li>
+         <li><Link to="/photo-of-the-day">Photo of the Day</Link></li>
+         <li><Link to="/dougie-birthday">Dougie's Birthday</Link></li>
+         <li><Link to="/sophie-birthday">Sophie's Birthday</Link></li>
+         <li><Link to="/my-birthday">My Birthday</Link></li>
           </ul>
         ):
         (
@@ -47,7 +48,6 @@ showDropdownMenu(event) {
         }
 
        </div>
-
     );
   }
 }

@@ -1,25 +1,23 @@
 import React from "react";
 import "./App.css";
-import NasaImages from '../src/components/NasaImages.js';
+
+import Dropdown from "./components/Stretch/Dropdown";
+import PhotoOfTheDay from "./components/PhotoOfTheDay.js";
+import DougieBirthday from './components/Stretch/DougieBirthday.js';
+import SophieBirthday from './components/Stretch/SophieBirthday.js';
+import MyBirthday from "./components/Stretch/MyBirthday.js";
+
+import {Route} from 'react-router-dom';
 
 function App() {
-//   // Step 3 - Fetching the Data 
-//  const [nasaImage, setNasaImage] = useState("");
-
-//   useEffect(() => {
-//     axios
-//       .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
-//       .then(res => {
-//         console.log(res);
-//         // Step 4 - Adding the Data to State
-//         setNasaImage(res.data.hdurl)})
-//       .catch(err => console.log(err));
-//   }, [])
 
   return (
     <div className="App">
-      {/* Step 5 - Display the Data */}
-      <NasaImages />
+      <Dropdown />
+      <Route exact path='/photo-of-the-day' component={PhotoOfTheDay} />
+      <Route exact path='/dougie-birthday' component={DougieBirthday} />
+      <Route exact path='/sophie-birthday' component={SophieBirthday} />
+      <Route exact path='/my-birthday' component={MyBirthday} />
     </div>
   );
 }

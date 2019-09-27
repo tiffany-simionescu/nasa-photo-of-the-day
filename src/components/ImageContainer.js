@@ -31,7 +31,7 @@ export default function ImageContainer(props) {
     // </div>
 
     // Second Day Design using Reactstrap
-    <Card>
+    <Card className="image-container">
       <CardImg className="image" src={image} alt={props.alt} />
         <CardBody>
           <CardTitle tag="h2">{title}</CardTitle>
